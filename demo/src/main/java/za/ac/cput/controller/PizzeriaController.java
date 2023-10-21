@@ -1,4 +1,4 @@
-package za.ac.cput.controllers;
+package za.ac.cput.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
