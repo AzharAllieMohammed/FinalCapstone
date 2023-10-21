@@ -29,7 +29,7 @@ class ToppingControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    private final String baseURL = "http://localhost:8080/topping";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/topping";
 
     @Test
     public void a_create(){

@@ -25,7 +25,7 @@ class ChefControllerTest {
     private static Chef chef2 = ChefFactory.buildChef("Ismail", "Retori", "021 000 001", "ismail@pizza.com", "Sous Chef", "Culinary school", pizzeria);
     @Autowired
     private TestRestTemplate restTemplate;
-    private final String baseURL = "http://localhost:8080/chef";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/chef";
 
     @Test
     void a_create() {

@@ -26,7 +26,7 @@ class EmployeeControllerTest {
     private static Employee employee2 = EmployeeFactory.buildEmployee("Faeeq", "Stay", "021 000 0022", "faeeq@pizza.com", pizzeria);
     @Autowired
     private TestRestTemplate restTemplate;
-    private final String baseURL = "http://localhost:8080/employee";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/employee";
 
     @Test
     void a_create() {

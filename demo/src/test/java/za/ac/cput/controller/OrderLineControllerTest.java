@@ -48,7 +48,7 @@ class OrderLineControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    private final String baseURL = "http://localhost:8080/orderline";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/orderline";
 
     @Test
     @Transactional
