@@ -1,8 +1,8 @@
 package za.ac.cput.controllers;
 
-import za.ac.cput.dto.AuthenticationRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import za.ac.cput.dto.AuthenticationRequest;
 
 @RestController
 @RequestMapping("/api/v1/auth/greetings")
