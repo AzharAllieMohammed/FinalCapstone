@@ -1,7 +1,7 @@
 package za.ac.cput.security;
 
 
-import za.ac.cput.Dao.UserDao;
+import za.ac.cput.dao.UserDao;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
