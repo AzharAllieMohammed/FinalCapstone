@@ -1,4 +1,4 @@
-package za.ac.cput.controllers;
+package za.ac.cput.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import za.ac.cput.Dao.UserDao;
+import za.ac.cput.dao.UserDao;
 import za.ac.cput.dto.AuthenticationRequest;
 import za.ac.cput.security.JwtUtils;
 

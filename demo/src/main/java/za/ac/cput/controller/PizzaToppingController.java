@@ -1,4 +1,4 @@
-package za.ac.cput.controllers;
+package za.ac.cput.controller;
 
 /* PizzaToppingController.java
  Author: Timothy Lombard (220154856)
