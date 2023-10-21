@@ -28,7 +28,7 @@ class DriverControllerTest {
     private static Driver driver = DriverFactory.buildDriver("Azhar","Esau","0216552521","lyle@gmail.com",vehicle,pizzeria);
     @Autowired
     private TestRestTemplate restTemplate;
-    private  final String baseURL = "http://localhost:8080/driver";
+    private  final String baseURL = "http://localhost:8080/api/v1/auth/driver";
     @Test
     void a_create() {
         String url = baseURL + "/create";

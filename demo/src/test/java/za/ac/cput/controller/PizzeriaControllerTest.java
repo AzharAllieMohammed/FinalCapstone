@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class PizzeriaControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
-    private final String baseURL = "http://localhost:8080/pizzeria";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/pizzeria";
         private static Pizzeria pizzeria = PizzeriaFactory.buildPizzaria(
                 "Hill Crest",
                 "Hotel Transylvania");

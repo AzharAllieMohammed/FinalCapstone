@@ -47,8 +47,8 @@ class PizzaToppingControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    private final String pizzaURL = "http://localhost:8080/pizza";
-    private final String toppingURL = "http://localhost:8080/topping";
+    private final String pizzaURL = "http://localhost:8080/api/v1/auth/pizza";
+    private final String toppingURL = "http://localhost:8080/api/v1/auth/topping";
 
 
 

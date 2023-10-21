@@ -25,7 +25,7 @@ class VehicleControllerTest {
     private static Vehicle vehicle = VehicleFactory.createVehicle("Hatch","Toyota","Cross","2021","Black");
     @Autowired
     private TestRestTemplate restTemplate;
-    private  final String baseURL = "http://localhost:8080/vehicle";
+    private  final String baseURL = "http://localhost:8080/api/v1/auth/vehicle";
     @Test
     void a_create() {
         String url = baseURL + "/create";
