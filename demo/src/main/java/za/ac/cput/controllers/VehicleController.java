@@ -1,0 +1,44 @@
+package za.ac.cput.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import za.ac.cput.domain.Vehicle;
+import za.ac.cput.service.VehicleService;
+
+import java.util.Set;
+
+@RestController
+@RequestMapping("/api/v1/auth/vehicle")
+public class VehicleController {
+    @Autowired
+    private VehicleService vehicleService;
+
+    @PostMapping("/create")
+    public Vehicle create(@RequestBody Vehicle vehicle){
+        return vehicleService.create(vehicle);
+    }
+
+
+
+    @GetMapping("/read/{id}")
+    public Vehicle read(@PathVariable String id){
+        return vehicleService.read(id);
+    }
+
+    @PostMapping("/update")
+    public Vehicle update(@RequestBody Vehicle vehicle){
+        return vehicleService.update(vehicle);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public boolean delete(@PathVariable String id){
+        return vehicleService.delete(id);
+    }
+
+    @RequestMapping({"/getall"})
+    public Set<Vehicle> getAll(){
+        return vehicleService.getAll();
+    }
+}
+
+
