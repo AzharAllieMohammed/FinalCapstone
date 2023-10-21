@@ -36,7 +36,7 @@ class PizzaControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    private final String baseURL = "http://localhost:8080/pizza";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/pizza";
 
     @Test
     public void a_create(){

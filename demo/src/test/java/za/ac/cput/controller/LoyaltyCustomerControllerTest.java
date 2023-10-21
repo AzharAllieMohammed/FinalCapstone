@@ -57,7 +57,7 @@ public class LoyaltyCustomerControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    private final String baseURL = "http://localhost:8080/loyaltycustomer";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/loyaltycustomer";
 
     @Test
     void a_create() {

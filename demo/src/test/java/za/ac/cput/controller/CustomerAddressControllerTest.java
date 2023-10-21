@@ -31,7 +31,7 @@ class CustomerAddressControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    private final String baseURL = "http://localhost:8080/customeraddress";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/customeraddress";
     @Test
     void a_create() {
         String url = baseURL + "/create";

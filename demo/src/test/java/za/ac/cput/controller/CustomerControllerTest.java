@@ -16,11 +16,9 @@ import za.ac.cput.domain.AddressType;
 import za.ac.cput.domain.Customer;
 import za.ac.cput.factory.AddressFactory;
 import za.ac.cput.factory.CustomerFactory;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -43,7 +41,7 @@ class CustomerControllerTest {
 
         @Autowired
         private TestRestTemplate restTemplate;
-        private final String baseURL = "http://localhost:8080/customer";
+        private final String baseURL = "http://localhost:8080/api/v1/auth/customer";
         @Test
         void a_create() {
             String url = baseURL + "/create";

@@ -25,7 +25,7 @@ public class BillControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    private final String baseURL = "http://localhost:8080/bill";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/bill";
 
     @Test
     void a_create() {

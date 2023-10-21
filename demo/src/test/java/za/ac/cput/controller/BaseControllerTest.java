@@ -28,7 +28,7 @@ class BaseControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    private final String baseURL = "http://localhost:8080/base";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/base";
 
     @Test
     public void a_create(){

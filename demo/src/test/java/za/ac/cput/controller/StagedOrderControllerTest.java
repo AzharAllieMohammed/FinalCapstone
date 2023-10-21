@@ -41,7 +41,7 @@ class StagedOrderControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    private final String baseURL = "http://localhost:8080/stagedOrder";
+    private final String baseURL = "http://localhost:8080/api/v1/auth/stagedOrder";
 
     @Test
     public void a_create(){
